@@ -1,12 +1,17 @@
 import os
+import time
 try:
 	from colorama import Fore, Back, Style
 except:
 	os.system("pip install colorama")
 	from colorama import Fore, Back, Style
-	
+
+var = 1
+choose = 1
+
 os.system("clear")
-print(Fore.YELLOW + ''' ________    _____     ____     __    __   _____        _____  
+while var == 1:
+	print(Fore.YELLOW + ''' ________    _____     ____     __    __   _____        _____  
 (___  ___)  / ____\   / __ \    ) )  ( (  (_   _)      / ____\ 
     ) )    ( (___    / /  \ \  ( (    ) )   | |       ( (___   
    ( (      \___ \  ( ()  () )  ) )  ( (    | |        \___ \  
@@ -32,11 +37,26 @@ ps. В случае ошибков порыскайте в инете
 
 07)PhoneInfoga (Информация о владельце номера)
 
-8)SayHello (Заполучение снимка лица человека находившегося в вашей точке доступа)
+08)SayHello (Заполучение снимка лица человека находившегося в вашей точке доступа)
 ''')
 
-choose = int(input(Fore.YELLOW+"Выберите число: "+Style.RESET_ALL))
-os.system("clear")
+	choose = input(Fore.YELLOW+"Выберите число: "+Style.RESET_ALL)
+	os.system("clear")
+	try:
+		choose = int(choose)
+		var = 0
+	except:
+		var = 1
+		S = 3
+		for i in range(3):
+			print("Введите пожалуйста число...")
+			print(S)
+			S -= 1
+			time.sleep(1)
+			os.system("clear")
+			
+		time.sleep(1)
+		os.system("clear")
 if choose == 0:
 	#1
 	os.system("apt install nmap")
