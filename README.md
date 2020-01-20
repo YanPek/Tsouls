@@ -1,6 +1,7 @@
 # TSOULS
 
 ## рус
+### [dev's group(rus)](https://t.me/joinchat/J6z8nxSkAQPa68JbIGRqyg)
 В данном приложении вы сможете увидеть большое(пока не большое) количество различных программ для хакинга в termux
 
 - **Nmap**
