@@ -63,9 +63,7 @@ ps. В случае ошибок порыскайте в инете
 
 08)SayHello (Заполучение снимка лица человека находившегося в вашей точке доступа)
 
-09)Morpheus (Создание mitm (man-in-the-middle) атак)
-
-10)RED_HAWK (Сканирование сетей)
+9)RED_HAWK (Сканирование сетей)
 '''+Fore.RED+'''
 99)ВЫХОД (Какое должно быть описание у выхода?)
 ''')
@@ -111,8 +109,6 @@ ps. В случае ошибок порыскайте в инете
 		#8
 		os.system("git clone https://github.com/thelinuxchoice/saycheese")
 		#9
-		os.system("git clone https://github.com/r00t-3xp10it/morpheus.git")
-		#10
 		os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
 
 	elif choose == 1:
@@ -146,9 +142,6 @@ ps. В случае ошибок порыскайте в инете
 		os.system("git clone https://github.com/thelinuxchoice/saycheese")
 
 	elif choose == 9:
-		os.system("git clone https://github.com/r00t-3xp10it/morpheus.git")
-
-	elif choose == 10:
 		os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
 
 
