@@ -79,7 +79,7 @@ In this application you can see a large (not yet large) number of different hack
 - **Sherlock**
 
 - **Instagram + Cupp**
-- **
+
 - **termux-ngrok**
 
 - **CAM-HACKERS**
