@@ -11,17 +11,20 @@ except:
 var = 1
 choose = 1
 a=0
-lang = input("Choose language:\n1)English\n2)Русский\n")
-try:
-	lang = int(lang)
-except:
-	n=3
-	for i in range(3):
-		print("Please enter a number")
-		print(n)
-		n-=1
-		time.sleep(1)
-		os.system("clear")
+b=0
+while b == 0:
+	lang = input("Choose language:\n1)English\n2)Русский\n")
+	try:
+		lang = int(lang)
+		b=1
+	except:
+		n=3
+		for i in range(3):
+			print("Please enter a number")
+			print(n)
+			n-=1
+			time.sleep(1)
+			os.system("clear")
 
 if lang == 2:
 	os.system("clear")
@@ -245,24 +248,8 @@ $$e$P"    $b     d$`    "$$c$F
 									sys.exit()
 	elif choose == 99:
 		sys.exit()
-	else:
-		S = 3
-		for i in range(3):
-			print("Введите пожалуйста число...")
-			print(S)
-			S -= 1
-			time.sleep(1)
-			os.system("clear")
 	if a==0:
 		os.system("clear")
 		print(Fore.BLUE+"Загрузка прошла успешно, удачного хакинга (В ознакомительных целях конечно же)"+Style.RESET_ALL)
 elif lang == 1:
 	print("Cooming soon")
-else:
-	n=3
-	for i in range(3):
-		print("Please enter a number")
-		print(n)
-		n-=1
-		time.sleep(1)
-		os.system("clear")
