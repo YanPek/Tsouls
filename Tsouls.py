@@ -1,5 +1,7 @@
 import os
 import time
+import random
+import sys
 try:
 	from colorama import Fore, Back, Style
 except:
@@ -10,34 +12,44 @@ var = 1
 choose = 1
 
 os.system("clear")
-while var == 1:
-	print(Fore.YELLOW + ''' ________    _____     ____     __    __   _____        _____  
+ban = Style.BRIGHT+''' ________    _____     ____     __    __   _____        _____  
 (___  ___)  / ____\   / __ \    ) )  ( (  (_   _)      / ____\ 
     ) )    ( (___    / /  \ \  ( (    ) )   | |       ( (___   
    ( (      \___ \  ( ()  () )  ) )  ( (    | |        \___ \  
     ) )         ) ) ( ()  () ) ( (    ) )   | |   __       ) ) 
    ( (      ___/ /   \ \__/ /   ) \__/ (  __| |___) )  ___/ /  
-   /__\    /____/     \____/    \______/  \________/  /____/'''+Fore.RED+'''
+   /__\    /____/     \____/    \______/  \________/  /____/'''
+
+while var == 1:
+	 
+	colors = list(vars(Fore).values())
+	colored_chars = [random.choice(colors) + ban]
+	print(''.join(colored_chars))
+	print(Fore.RED+'''
 
 00) Превратить ваше устройство в хакинг машину'''+Fore.GREEN+'''
 
-01) Nmap (web сканирование) 
+01)Nmap (web сканирование) 
 
-02) Sherlock (Поиск ников по разным соц-сетям
+02)Sherlock (Поиск ников по разным соц-сетям)
 
-03) Instagram + cupp (Брут паролей инстаграм + создание словаря)
+03)Instagram + cupp (Брут паролей инстаграм + создание словаря)
 
 04)termux-ngrok (создание публичных url)
 
 05)CAM-HACKERS (Получение ip различных камер)
 
-06)metasploit-framework (Тут я в двух словах не обьясню, придется гуглит)
+06)metasploit-framework (Тут я в двух словах не обьясню, придется гуглить)
 
-ps. В случае ошибков порыскайте в инете
+ps. В случае ошибок порыскайте в инете
 
 07)PhoneInfoga (Информация о владельце номера)
 
 08)SayHello (Заполучение снимка лица человека находившегося в вашей точке доступа)
+
+09)Morpheus (Создание mitm (man-in-the-middle) атак)
+'''+Fore.RED+'''
+99)ВЫХОД (Какое должно быть описание у выхода?)
 ''')
 
 	choose = input(Fore.YELLOW+"Выберите число: "+Style.RESET_ALL)
@@ -80,6 +92,8 @@ if choose == 0:
 	os.system("git clone https://github.com/sundowndev/PhoneInfoga")
 	#8
 	os.system("git clone https://github.com/thelinuxchoice/saycheese")
+	#9
+	os.system("git clone https://github.com/r00t-3xp10it/morpheus.git")
 
 elif choose == 1:
 	os.system("apt install nmap")
@@ -111,5 +125,10 @@ elif choose == 7:
 elif choose == 8:
 	os.system("git clone https://github.com/thelinuxchoice/saycheese")
 
+elif choose == 9:
+	os.system("git clone https://github.com/r00t-3xp10it/morpheus.git")
+
+elif choose == 99:
+	sys.exit()
 os.system("clear")
 print(Fore.BLUE+"Загрузка прошла успешно, удачного хакинга (В ознакомительных целях конечно же)"+Style.RESET_ALL)
