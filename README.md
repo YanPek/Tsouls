@@ -3,7 +3,16 @@
 ## рус
 ### [dev's Telegram group(rus)](https://t.me/joinchat/J6z8nxSkAQPa68JbIGRqyg)
 В данном приложении вы сможете увидеть большое(пока не большое) количество различных программ для хакинга в termux
-
+Установка:
+```
+cd Tsouls
+chmod +x *
+pkg update && pkg upgrade
+apt update && apt upgrade
+pkg install python
+pip install --upgrade pip
+python Tsouls
+```
 - **Nmap**
 
 - **Sherlock**
