@@ -177,6 +177,8 @@ if choose == 0:
 	os.system("git clone https://github.com/thelinuxchoice/saycheese")
 	#9
 	os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
+	#10
+	os.system("git clone https://github.com/Argisht44/android.git")
 
 elif choose == 1:
 	os.system("apt install nmap")
