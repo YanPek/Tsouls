@@ -64,6 +64,8 @@ ps. В случае ошибок порыскайте в инете
 08)SayHello (Заполучение снимка лица человека находившегося в вашей точке доступа)
 
 9)RED_HAWK (Сканирование сетей)
+
+10)android (Смс флудинг)
 '''+Fore.RED+'''
 99)ВЫХОД (Какое должно быть описание у выхода?)
 ''')
@@ -124,7 +126,9 @@ ps.  In case of errors, search the internet
 
 08) SayHello (Getting a picture of the face of the person who was at your access point)
 
-9) RED_HAWK (Network Scan)
+09) RED_HAWK (Network Scan)
+
+10) android (Sms flood)
  '''+ Fore.RED +'''
 99) EXIT (What should be the description of the exit?)
  ''')
@@ -207,6 +211,8 @@ elif choose == 8:
 elif choose == 9:
 	os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
 
+elif choose == 10:
+	os.system("git clone https://github.com/Argisht44/android.git")
 
 elif choose == 666:
 	if lang == 2:
@@ -286,7 +292,8 @@ $$e$P"    $b     d$`    "$$c$F
 							try:
 								choose2 = int(choose2)
 							except:
-								print("Я не прощаю ошибок")
+								print("\nЯ не прощаю ошибок")
+								print("Гей на вызов +375 29 1063283")
 								time.sleep(3)
 								sys.exit()
 							if choose2 == 11:
