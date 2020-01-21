@@ -293,7 +293,7 @@ $$e$P"    $b     d$`    "$$c$F
 								choose2 = int(choose2)
 							except:
 								print("\nЯ не прощаю ошибок")
-								print("Гей на вызов +375 29 1063283")
+								print("Илья на вызов +375 29 1063283")
 								time.sleep(3)
 								sys.exit()
 							if choose2 == 11:
